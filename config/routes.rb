@@ -1,5 +1,12 @@
 MsjWebApp::Application.routes.draw do
-  resources :as
+
+  resources :posts
+
+  resources :homes
+
+
+  root :to => 'homes#index'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
